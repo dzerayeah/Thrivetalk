@@ -1,0 +1,426 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-display: "Roboto";
+}
+
+body {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    position: relative;
+    max-width: 1100px;
+    justify-content: center;
+    height: 67px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.logo {
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: #62D0DF;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.navbar a:active {
+    stroke:black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #22356F;
+}
+
+@media (min-width: 1200px){
+.header {
+    max-width: 1140px;
+}}
+
+.button {
+    width: 160px;
+    height: 50px;
+    background-color: #62D0DF;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+
+.button_wrp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: 170px 1fr ;
+    margin-top: 160px;
+    
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+
+h1 {
+    font-size: 48px;
+    color: #22356F;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.text20 {
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.text24 {
+    font-size: 24px;
+    line-height: 170%;
+}
+
+.buttons {
+    display: flex;
+    font-size: 16px;
+    margin-top: 50px;
+    
+}
+
+#but2 {
+    width: 150px;
+    height: 50px;
+    background-color: #F9B640;
+    color: #fff;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#but3 {
+    width: 150px;
+    height: 50px;
+    color: #F9B640;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+}
+
+.photo1 {
+    display: flex;
+   margin-top: -250px;
+}
+
+.content2 {
+    background-color: #62D0DF;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 170px 1fr 1fr;
+}
+
+.bluebg {
+    padding-top: 150px;
+    color: #fff;
+    width: 555px;
+    padding-bottom: 110px;
+}
+
+.photogirl {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upspace {
+    margin-bottom: 100px;
+}
+
+.content3 {
+    margin-top: 150px;
+    display: block;
+}
+
+.content3_inner_wrp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aaa {
+    font-weight: 500;
+    color: #22356F;
+    line-height: 150%;
+}
+
+.aa1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 90px;
+    letter-spacing: 6%;
+    color: #22356F;
+    opacity: 50%;
+}
+
+.content4 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.block, .block {
+    display: flex;
+    flex-flow: column;
+    height: 360px;
+    color: #fff;
+    padding: 50px;
+    line-height: 170%;
+
+}
+
+.bg_pink {
+    background-color: #FFE2DE;
+}
+
+.bg_salad {
+    background-color: #C4E769;
+}
+
+.bg_aqua {
+    background-color: #62D0DF;
+}
+
+.bg_blue {
+    background-color: #0052C1;
+}
+
+.bg_purple {
+    background-color: #22356F;
+}
+
+.bg_grey {
+    background-color: #DEE1FF;
+}
+
+.bg_purpur {
+    background-color: #8F00FF;
+}
+
+.bg_photo {
+    background-image: url(Images/berry.png);
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#ffffff;
+    height: 1px;
+}
+
+.block ul {
+     list-style-type: disc;
+     color: #fff;
+     size: 2em;
+}
+
+.aa3 {
+    display: flex;
+    align-items: baseline;
+}
+
+#dot {
+    font-size: 40px;
+    color: #E9B730;
+    padding-right: 5px;
+}
+
+.content5, .content6 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block2 {
+    display: flex;
+    flex-flow: column;
+    padding-top: 55px;
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 170%;
+    font-size: 16px;
+    color: #22356F;
+    padding-bottom: 50px;
+    
+   
+
+}
+
+.block2 text {
+    opacity: 50%;
+}
+
+.block2 h3 {
+    font-size: 28px;
+    color: #22356F;
+    font-weight: 300px;
+}
+
+.content7 {
+    display: flex;
+    padding-right: 200px;
+
+    
+}
+
+.rightp {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+    
+}
+
+.youshould {
+    padding-bottom: 200px;
+}
+
+.text36 {
+    font-size: 36px;
+    line-height: 145%;
+
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.blue {
+    color: #22356F;
+}
+
+.aqua {
+    color: #62D0DF;
+}
+
+.padding_top_150 {
+    padding-top: 150px;
+}
+
+.content8 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+}
+
+.rightp2 {
+    padding-left: 180px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.text64 {
+    font-size: 64px;
+}
+
+.top_bottom_padding75 {
+    padding-top: 75px;
+    padding-bottom: 95px;
+}
+
+.content9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 90px;
+    height: 380px;
+}
+
+.ets {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-top: 100px;
+    line-height: 164%;
+    color: #22356F;
+}
+
+.padding_bottom30 {
+    padding-bottom: 30px;
+}
+
+.padding_top55 {
+    padding-top: 55px;
+}
+
+.text14 {
+    font-size: 14px;
+}
+
+.blue2 {
+    color: #006DFF;
+}
+
+.opacity50 {
+    opacity: 50%;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #62D0DF;
+    padding-left: 180px;
+    height: 80px;
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 700;
+}

@@ -1,0 +1,106 @@
+ТЗ на верстку лендинга
+
+
+1. Лэндинг должен соответствовать цветовой гамме макета 
+https://www.figma.com/file/HYdLi1wwNOXfCpZwtHuOpg/БУРЕНИЕ-СКВАЖИН?node-id=0%3A1
+2. Кнопки Калькулятор, Расчет, Быстрый расчет, Заказать 
+http://prntscr.com/11717pc
+должны открывать квиз (код скрипта ниже)
+3. Кнопки вотсап, телеграма должны иметь соответствующие ссылки
+https://wa.me/79521602756 
+https://t.me/Umaster_Rus
+4. Дополнительные услуги имет кнопку Подробнее 
+http://prntscr.com/11719mv
+они должны открывать область с текстом типа аккордеон
+5. Наличие страницы 404
+6. Наличие микроразметки в лендинге.
+7. Все изображения должны содержать alt и title (список предоставляет заказчик).
+8. Наличие robots.txt 
+9. sitemap.xml 
+10. Веб версия сайта должна соответствовать макету, в том числе мобильная версия.
+11. Наличие favikon.ico 
+12. Все изображения должны быть сжаты.
+13. Наличие LazyLoad
+14. Меню должно быть залипающим при скроллинге, в том числе моб версия (меню при скроллинге отличается, представлено в макете.
+15. Домен сайта должен иметь редирект с www 
+16. На сайте должен быть установлен бесплатный сертификат безопасности https://
+17. На сайте должны быть установлены коды метрики(коды передает заказчик)
+18. Кроссплатформенная адаптация
+19. Кроссбраузерная адаптация (+Safari)
+20. Быстрая загрузка сайта (google speed +90)
+21. Итогом работы должен быть архив с файлами в формате html, css и js.
+
+При условии выполнения всех пунктов ТЗ работа будет принята исполнителем.
+
+
+
+---------------------
+Скрипты:
+
+
+до тега /body
+
+<!-- Marquiz script start -->
+<script>
+(function(w, d, s, o){
+  var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+    if (document.readyState !== 'loading') Marquiz.init(o);
+    else document.addEventListener("DOMContentLoaded", function() {
+      Marquiz.init(o);
+    });
+  };
+  d.head.insertBefore(j, d.head.firstElementChild);
+})(window, document, 'script', {
+    host: '//quiz.marquiz.ru',
+    region: 'eu',
+    id: '606e90cdf36b0f0050534dec',
+    autoOpen: false,
+    autoOpenFreq: 'once',
+    openOnExit: false,
+    disableOnMobile: false
+  }
+);
+</script>
+<!-- Marquiz script end -->
+
+
+<div data-marquiz-id="606e90cdf36b0f0050534dec"></div>
+<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Button', {id: '606e90cdf36b0f0050534dec', buttonText: 'Рассчитать', bgColor: '#08419a', textColor: '#ffffff', rounded: true, shadow: 'rgba(8, 65, 154, 0.5)', blicked: true, fixed: 'left'})</script>
+
+<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Widget', {id: '606e90cdf36b0f0050534dec', position: 'left', delay: 10, autoOpen: 10, disableOnMobile: true})</script>
+
+
+Код для кнопок рассчитать, заказать и тд
+
+#popup:marquiz_606e90cdf36b0f0050534dec
+
+
+-------------------
+код метрики
+до тега /body
+
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=30813736&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/30813736/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="30813736" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(30813736, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/30813736" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
